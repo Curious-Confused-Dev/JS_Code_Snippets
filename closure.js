@@ -54,3 +54,10 @@ myCounter.increment();
 
 // count is not directly accessible outside the function.
 // It can only be changed using increment() or decrement(), keeping it safe from accidental modification.
+
+
+for (let i = 1; i <= 3; i++) {
+    setTimeout(function() {
+        console.log(i); // ❌ Output: 4, 4, 4 (wrong)
+    }, i * 2000);
+}
